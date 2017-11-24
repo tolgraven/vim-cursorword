@@ -16,7 +16,7 @@ set cpo&vim
 augroup cursorword
   autocmd!
   autocmd VimEnter,ColorScheme * call cursorword#highlight()
-  autocmd VimEnter,WinEnter,BufEnter,CursorMoved,CursorMovedI * call cursorword#matchadd()
+  autocmd VimEnter,WinEnter,BufEnter,CursorMoved,CursorMovedI * call cursorword#update()
 augroup END
 
 let &cpo = s:save_cpo
